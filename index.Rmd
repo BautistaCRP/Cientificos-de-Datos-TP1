@@ -83,13 +83,13 @@ library(lpSolve)
 
 # Coeficientes de la funcion objetivo
 f.obj <- c(4500, 4500)
-f.obj # Imprimimos los coef de la funcion obj, para ver que esten bien inicializados
+f.obj # Imprimimos los coef. de la función obj, para ver que estén bien inicializados
 ```
 
 
 ### Restricciones: 
 
-Las restricciones conforman un sistema de inecuaciones, en el que cada una representa una limita el espacio de soluciones acorde a las características del problema.
+Las restricciones conforman un sistema de inecuaciones, en el que cada una representa una limitación en el espacio de soluciones acorde a las características del problema.
 
 \
 
