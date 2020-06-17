@@ -1,1 +1,294 @@
-Hello World!
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Blanco Conrado, Carpintero Bautista, Severino Natalia" />
+
+
+<title>Cientificos de Datos TP1 - Ejercicio Práctico IO</title>
+
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+/* A workaround for https://github.com/jgm/pandoc/issues/4278 */
+a.sourceLine {
+  pointer-events: auto;
+}
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+<link rel="stylesheet" href="index_files/style.css" type="text/css" />
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<section class="page-header">
+<h1 class="title toc-ignore project-name">Cientificos de Datos TP1 - Ejercicio Práctico IO</h1>
+<h4 class="author project-author">Blanco Conrado, Carpintero Bautista, Severino Natalia</h4>
+</section>
+
+
+
+<section class="main-content">
+<div id="consigna" class="section level2">
+<h2>Consigna:</h2>
+<blockquote>
+<p>Tema: Programación Lineal</p>
+<p>Ejercicio: 2.b) Practico 3, 2018</p>
+</blockquote>
+<p>Suponga que acaba de heredar USD 6000 y que desea invertirlos. Se le presentan dos oportunidades de participación en negocios.</p>
+<p>En ambos casos, la inversión significa dedicar un poco de tiempo el siguiente verano, al igual que invertir en efectivo.</p>
+<p>En el primer negocio al convertirse en socio completo tendría que invertir USD 5000 y 400 horas, y su ganancia estimada (ignorando el valor del tiempo) sería USD 4500.</p>
+<p>Las cifras correspondientes a la segunda proposición son USD 4000 y 500 horas, con ganancia estimada de USD 4500.</p>
+<p>Sin embargo, en ambas propuestas podrían entrar con cualquier <strong>fracción</strong> de la sociedad; la participación en las utilidades sería proporcional a esa fracción.</p>
+<p>Como de todas maneras Ud. está buscando un trabajo interesante para el verano (600 horas a lo sumo), ha decidido participar en una o ambas propuestas, con la combinación que <strong>maximice</strong> la ganancia total estimada.</p>
+<hr />
+</div>
+<div id="resolución" class="section level2">
+<h2>Resolución:</h2>
+<p>Este es un problema de maximizacion, en el que se busca maximizar las ganacias en funcion de las fracciones que se invierten en cada sociedad/inverción .</p>
+<p>Se tienen para invertir $6000 y 600Hs</p>
+<ul>
+<li><p>Inverción en la sociedad 1: $5000 &amp; 400Hs -&gt; Ganancia = $4500</p></li>
+<li><p>Inverción en la sociedad 2: $4000 &amp; 500Hs -&gt; Ganancia = $4500</p></li>
+</ul>
+<div id="definicion-de-variables" class="section level3">
+<h3>Definicion de variables:</h3>
+<p>En funcion de los datos antes mecionados se pueden definir las variables x1 y x2 como:</p>
+<ul>
+<li>x1: fracción que se invierte en la sociedad 1</li>
+<li>x2: fracción que se invierte en la sociedad 2</li>
+</ul>
+</div>
+<div id="funcion-objetivo-a-maximizar" class="section level3">
+<h3>Funcion Objetivo (a maximizar):</h3>
+<p><span class="math display">\[
+\begin{align}
+    Z &amp;= A\ x1 + B\ x2 
+\end{align}
+\]</span></p>
+<blockquote>
+<p>A: Ganancias de la inversion 1.<br />
+B: Ganancias de la inversion 2.</p>
+<p>Para este caso A = B = 4500. Entonces</p>
+</blockquote>
+<p><span class="math display">\[
+\begin{align}
+    Z &amp;= 4500\ x1 + 4500\ x2 
+\end{align}
+\]</span></p>
+<p>Para resolver el problema en R se usará el paquete ‘lpSolve’ para resolución de problemas de programación lineal.</p>
+<blockquote>
+<p>Para instalar el paquete descomentar la primer linea</p>
+</blockquote>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># install.packages(&quot;lpSolve&quot;)</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">library</span>(lpSolve)</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="co"># Coeficientes de la funcion objetivo</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>f.obj &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">4500</span>, <span class="dv">4500</span>)</span>
+<span id="cb1-6"><a href="#cb1-6"></a>f.obj <span class="co"># Imprimimos los coef de la funcion obj, para ver que esten bien inicializados</span></span></code></pre></div>
+<pre><code>## [1] 4500 4500</code></pre>
+</div>
+<div id="restricciones" class="section level3">
+<h3>Restricciones:</h3>
+<p>Las restricciones conforman un sistema de inecuaciones, en el que cada una representa una limita el espacio de soluciones acorde a las características del problema.</p>
+<p><br />
+</p>
+<p><span class="math display">\[
+\left\{
+    \begin{array}\\
+        5000\ x1 + 4000\ x2 \le 6000 &amp; \mbox{Inecuacion de la restriccion respecto al dinero invertido }  \\
+        400\ x1 + 500\ x2 \le 600 &amp; \mbox{Inecuacion de la restriccion respecto a las horas invertidas} \\
+        x1,\ x2 \ge 0  &amp; \mbox{Restriccion de no negatividad} \\
+    \end{array}
+\right.
+\]</span></p>
+<p><br />
+</p>
+<p>Este sistema de inecuaciones también representa un modelo matemático formal representado por un sistema matricial. Este sistema tiene la forma <span class="math inline">\(Ax=b\)</span> donde <span class="math inline">\(A\)</span> es la matriz de coeficientes y <span class="math inline">\(b\)</span> es la columna de términos constantes.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Inicializamos la matriz de coeficientes de las restricciones por fila</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="co"># No se considera la restricción de no negatividad ya que es asumida automáticamente</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>f.con &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">c</span>(<span class="dv">5000</span>, <span class="dv">4000</span>, <span class="dv">400</span>, <span class="dv">500</span>), <span class="dt">nrow =</span> <span class="dv">2</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="co"># Inicializamos los signos de las inecuaciones</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>f.dir &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;&lt;=&quot;</span>,<span class="st">&quot;&lt;=&quot;</span>)</span>
+<span id="cb3-7"><a href="#cb3-7"></a></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="co"># Inicializamos la columna de términos constantes</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>f.rhs &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">6000</span>,<span class="dv">600</span>)</span></code></pre></div>
+</div>
+<div id="solución" class="section level3">
+<h3>Solución:</h3>
+<p>Una vez inicializado el sistema de inecuaciones se debe buscar el valor máximo del sistema, dadas las restricciones, para encontrar la solución final. Para esto se utiliza el comando <em>lp</em> que resuelve el problema en función a sus parámetros. Entre los mismos se encuentran las variables inicializadas anteriormente así como también un parámetro adicional para determinar si se trata de un problema de minimización o maxización.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Valor final de Z</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>solution &lt;-<span class="st"> </span><span class="kw">lp</span>(<span class="dt">direction =</span> <span class="st">&quot;max&quot;</span>, <span class="dt">objective.in =</span> f.obj, <span class="dt">const.mat =</span> f.con, <span class="dt">const.dir =</span> f.dir, <span class="dt">const.rhs =</span> f.rhs)</span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a>max_value &lt;-<span class="st"> </span>solution<span class="op">$</span>objval</span>
+<span id="cb4-5"><a href="#cb4-5"></a>point &lt;-<span class="st"> </span>solution<span class="op">$</span>solution</span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="kw">print</span>(<span class="kw">paste</span>(</span>
+<span id="cb4-8"><a href="#cb4-8"></a>  <span class="st">&quot;El valor maximo en ganancias es igual a &quot;</span>, </span>
+<span id="cb4-9"><a href="#cb4-9"></a>  max_value, </span>
+<span id="cb4-10"><a href="#cb4-10"></a>  <span class="st">&quot; y se obtine en el punto (x1,x2) = &quot;</span>, </span>
+<span id="cb4-11"><a href="#cb4-11"></a>  <span class="kw">format</span>(<span class="kw">round</span>(point[<span class="dv">1</span>],<span class="dv">2</span>), <span class="dt">nsmall =</span> <span class="dv">2</span>),</span>
+<span id="cb4-12"><a href="#cb4-12"></a>  <span class="st">&quot; , &quot;</span>,</span>
+<span id="cb4-13"><a href="#cb4-13"></a>  <span class="kw">format</span>(<span class="kw">round</span>(point[<span class="dv">2</span>],<span class="dv">2</span>), <span class="dt">nsmall =</span> <span class="dv">2</span>)</span>
+<span id="cb4-14"><a href="#cb4-14"></a>  ))</span></code></pre></div>
+<pre><code>## [1] &quot;El valor maximo en ganancias es igual a  6000  y se obtine en el punto (x1,x2) =  0.67  ,  0.67&quot;</code></pre>
+</div>
+<div id="solución-gráfica" class="section level3">
+<h3>Solución gráfica:</h3>
+<p>En este apartado se utilizara el paquete <em>ggplot2</em> para mostrar la resolución mediante un método gráfico.</p>
+<p>Para esto realizaremos un gráfico que representa el espacio de soluciones acotado según las restricciones del problema. Este es un gráfico de dos variables en el que cada eje representan los valores de <span class="math inline">\(x1\)</span> y <span class="math inline">\(x2\)</span>.</p>
+<blockquote>
+<p>Para instalar el paquete descomentar la primer linea</p>
+</blockquote>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># install.packages(&quot;ggplot2&quot;)</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="kw">options</span>(<span class="dt">warn =</span> <span class="dv">-1</span>)</span>
+<span id="cb6-5"><a href="#cb6-5"></a></span>
+<span id="cb6-6"><a href="#cb6-6"></a>fun<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="cf">function</span>(x) <span class="fl">-0.8</span> <span class="op">*</span><span class="st"> </span>x <span class="op">+</span><span class="st"> </span><span class="fl">1.2</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a>fun<span class="fl">.2</span> &lt;-<span class="st"> </span><span class="cf">function</span>(x) <span class="fl">-1.25</span> <span class="op">*</span><span class="st"> </span>x <span class="op">+</span><span class="st"> </span><span class="fl">1.5</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="kw">ggplot</span>(<span class="kw">data.frame</span>(<span class="dt">x=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">2</span>)), <span class="kw">aes</span>(x)) <span class="op">+</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a><span class="st">  </span><span class="kw">stat_function</span>(<span class="dt">fun=</span>fun<span class="fl">.1</span>, <span class="dt">geom=</span><span class="st">&quot;area&quot;</span>,<span class="dt">fill=</span><span class="st">&quot;blue&quot;</span>,<span class="dt">alpha=</span><span class="fl">0.4</span>) <span class="op">+</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a><span class="st">  </span><span class="kw">stat_function</span>(<span class="dt">fun=</span>fun<span class="fl">.1</span>, <span class="dt">geom=</span><span class="st">&quot;line&quot;</span>,<span class="dt">col=</span><span class="st">&quot;blue&quot;</span>,<span class="dt">alpha=</span><span class="dv">1</span>) <span class="op">+</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a><span class="st">  </span><span class="kw">geom_text</span>(<span class="kw">aes</span>(<span class="dt">x=</span><span class="fl">1.5</span>,<span class="dt">y=</span><span class="fl">0.5</span>,<span class="dt">label=</span><span class="st">&quot;5000 x1 + 4000 x2 &lt;= 6000&quot;</span>), <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">alpha=</span><span class="fl">0.4</span>) <span class="op">+</span></span>
+<span id="cb6-13"><a href="#cb6-13"></a><span class="st">  </span></span>
+<span id="cb6-14"><a href="#cb6-14"></a><span class="st">  </span><span class="kw">stat_function</span>(<span class="dt">fun=</span>fun<span class="fl">.2</span>, <span class="dt">geom=</span><span class="st">&quot;area&quot;</span>,<span class="dt">fill=</span><span class="st">&quot;red&quot;</span>,<span class="dt">alpha=</span><span class="fl">0.4</span>) <span class="op">+</span></span>
+<span id="cb6-15"><a href="#cb6-15"></a><span class="st">  </span><span class="kw">stat_function</span>(<span class="dt">fun=</span>fun<span class="fl">.2</span>, <span class="dt">geom=</span><span class="st">&quot;line&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">alpha=</span><span class="dv">1</span>) <span class="op">+</span></span>
+<span id="cb6-16"><a href="#cb6-16"></a><span class="st">  </span><span class="kw">geom_text</span>(<span class="kw">aes</span>(<span class="dt">x=</span><span class="fl">0.6</span>,<span class="dt">y=</span><span class="fl">1.4</span>,<span class="dt">label=</span><span class="st">&quot;400 x1 + 500 x2 &lt;= 600&quot;</span>), <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">alpha=</span><span class="fl">0.4</span>) <span class="op">+</span></span>
+<span id="cb6-17"><a href="#cb6-17"></a><span class="st">  </span></span>
+<span id="cb6-18"><a href="#cb6-18"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">x=</span><span class="fl">0.67</span>, <span class="dt">y=</span><span class="fl">0.67</span>), <span class="dt">colour=</span><span class="st">&quot;black&quot;</span>)<span class="op">+</span></span>
+<span id="cb6-19"><a href="#cb6-19"></a><span class="st">  </span><span class="kw">geom_text</span>(<span class="kw">aes</span>(<span class="dt">x=</span><span class="fl">0.9</span>,<span class="dt">y=</span><span class="fl">0.8</span>,<span class="dt">label=</span><span class="st">&quot;Z(0.67, 0.67) = 6000&quot;</span>), <span class="dt">col=</span><span class="st">&quot;black&quot;</span>, <span class="dt">alpha=</span><span class="fl">0.4</span>) <span class="op">+</span></span>
+<span id="cb6-20"><a href="#cb6-20"></a><span class="st">  </span></span>
+<span id="cb6-21"><a href="#cb6-21"></a><span class="st">  </span><span class="kw">geom_segment</span>(<span class="dt">mapping=</span><span class="kw">aes</span>(<span class="dt">x=</span><span class="dv">0</span>,<span class="dt">y=</span><span class="dv">0</span>,<span class="dt">xend=</span><span class="dv">2</span>, <span class="dt">yend=</span><span class="dv">0</span>), <span class="dt">arrow=</span><span class="kw">arrow</span>(), <span class="dt">size=</span><span class="fl">0.5</span>, <span class="dt">alpha=</span><span class="fl">0.5</span>) <span class="op">+</span></span>
+<span id="cb6-22"><a href="#cb6-22"></a><span class="st">  </span><span class="kw">geom_segment</span>(<span class="dt">mapping=</span><span class="kw">aes</span>(<span class="dt">x=</span><span class="dv">0</span>,<span class="dt">y=</span><span class="dv">0</span>,<span class="dt">xend=</span><span class="dv">0</span>, <span class="dt">yend=</span><span class="dv">2</span>), <span class="dt">arrow=</span><span class="kw">arrow</span>(), <span class="dt">size=</span><span class="fl">0.5</span>, <span class="dt">alpha=</span><span class="fl">0.5</span>) <span class="op">+</span></span>
+<span id="cb6-23"><a href="#cb6-23"></a><span class="st">  </span></span>
+<span id="cb6-24"><a href="#cb6-24"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;x1&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span> (<span class="st">&quot;x2&quot;</span>) <span class="op">+</span></span>
+<span id="cb6-25"><a href="#cb6-25"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Solución gráfica&quot;</span>) <span class="op">+</span></span>
+<span id="cb6-26"><a href="#cb6-26"></a><span class="st">  </span><span class="kw">ylim</span>(<span class="dv">0</span>,<span class="dv">2</span>)</span></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" /><!-- --></p>
+</div>
+</div>
+</section>
+
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
