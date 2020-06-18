@@ -1,6 +1,6 @@
 ---
 title: Cientificos de Datos TP1 - Ejercicio Práctico IO 
-author: Blanco Conrado, Carpintero Bautista, Severino Natalia 
+author: Blanco Conrado, Carpintero Juan Bautista, Severino Natalia 
 
     
 output:
