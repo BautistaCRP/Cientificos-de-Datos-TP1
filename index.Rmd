@@ -15,7 +15,7 @@ output:
 ## Consigna:
 > Tema: Programación Lineal 
 >
-> Ejercicio: 2.b) Practico 3, 2018 
+> Ejercicio: Practico 3 - Ej 2.b) \ \ \  2018 
 
 Suponga que acaba de heredar USD 6000 y que desea invertirlos. 
 Se le presentan dos oportunidades de participación en negocios. 
@@ -38,9 +38,9 @@ Este es un problema de maximizacion, en el que se busca maximizar las ganacias e
 
 Se tienen para invertir $6000 y 600Hs 
                                              
-  - Inverción en la sociedad 1: $5000 & 400Hs -> Ganancia = $4500   
+  - Inverción en la sociedad 1: \ \ \ $5000 & 400Hs \ → \ Ganancia = $4500   
                                                  
-  - Inverción en la sociedad 2: $4000 & 500Hs -> Ganancia = $4500   
+  - Inverción en la sociedad 2: \ \ \ $4000 & 500Hs \ → \ Ganancia = $4500   
 
      
  
@@ -138,11 +138,11 @@ max_value <- solution$objval
 point <- solution$solution
 
 print(paste(
-  "El valor maximo en ganancias es igual a ", 
+  "Las ganancias maximas son iguales a $", 
   max_value, 
-  " y se obtine en el punto (x1,x2) = ", 
+  " y se obtinen en el punto (x1,x2) = ", 
   format(round(point[1],2), nsmall = 2),
-  " , ",
+  ",",
   format(round(point[2],2), nsmall = 2)
   ))
 
