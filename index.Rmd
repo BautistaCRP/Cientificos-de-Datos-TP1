@@ -2,14 +2,12 @@
 title: Cientificos de Datos TP1 - Ejercicio Práctico IO 
 author: Blanco Conrado, Carpintero Juan Bautista, Severino Natalia 
 
-    
 output:
   prettydoc::html_pretty:
     theme: cayman
     highlight: github
 
 ---
-
 
 
 ## Consigna:
@@ -188,7 +186,20 @@ ggplot(data.frame(x=c(0,2)), aes(x)) +
 
 ```
 
+### Librerías
 
+lpsolve 
+
+- Documentación: https://www.rdocumentation.org/packages/lpSolve/versions/5.6.15
+- Manual: https://cran.r-project.org/web/packages/lpSolve/lpSolve.pdf
+
+\
+
+
+ggplot2
+
+- Documentación: https://www.rdocumentation.org/packages/ggplot2/versions/3.3.1
+- Manual: https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf
 
 
 
