@@ -175,7 +175,7 @@ ggplot(data.frame(x=c(0,2)), aes(x)) +
   stat_function(fun=fun.2, geom="line",col="red",alpha=1) +
   geom_text(aes(x=0.6,y=1.4,label="400 x1 + 500 x2 <= 600"), col="red", alpha=0.4) +
   
-  geom_point(aes(x=0.67, y=0.67), colour="black")+
+  geom_point(aes(x=point[1], y=point[2]), colour="black")+
   geom_text(aes(x=0.9,y=0.8,label="Z(0.67, 0.67) = 6000"), col="black", alpha=0.4) +
   
   geom_segment(mapping=aes(x=0,y=0,xend=2, yend=0), arrow=arrow(), size=0.5, alpha=0.5) +
