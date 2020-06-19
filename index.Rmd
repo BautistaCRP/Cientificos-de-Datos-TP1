@@ -14,7 +14,6 @@ output:
 
 ## Consigna:
 
-
 Suponga que acaba de heredar USD 6000 y que desea invertirlos. 
 Se le presentan dos oportunidades de participación en negocios. 
 
