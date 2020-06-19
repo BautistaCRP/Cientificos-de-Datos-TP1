@@ -9,11 +9,11 @@ output:
 
 ---
 
+> Tema: Programación Lineal \
+> Ejercicio: Practico 3 - Ej 2.b) \ \ [2018] 
 
 ## Consigna:
-> Tema: Programación Lineal 
->
-> Ejercicio: Practico 3 - Ej 2.b) \ \ \  2018 
+
 
 Suponga que acaba de heredar USD 6000 y que desea invertirlos. 
 Se le presentan dos oportunidades de participación en negocios. 
